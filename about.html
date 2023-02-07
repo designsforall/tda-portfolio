@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>//PORTFOLIO</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
+    <header>
+      <div id="title">
+        <h1><a href="index.html">//PORTFOLIO</a></h1>
+      </div>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html"><li>home</li></a>
+            <a href="works.html"><li>works</li></a>
+            <a href="about.html"><li>about</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2 id="about" class="hmargin title about contacts">about
+      <ul>
+        <li>
+          <a href="https://github.com/" target="_blank"
+            ><i class="github fab fa-github-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/" target="_blank"
+            ><i class="instagram fab fa-instagram-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="twitter fab fa-twitter-square"></i
+          ></a>
+        </li>
+      </ul>
+    </h2>
+      <article class="margin">
+        <div class="mainitem blurcon">
+          <img
+            class="blur marginbottom"
+            src="images/profilepicwide.jpg"
+            alt=""
+            width="100%"
+          />
+        </div>
+      </article>
+      <article class="aboutpr margin">
+        <dl>
+          <dt>
+            <ruby>金寅鎬<rt>キムインホ</rt></ruby>
+          </dt>
+          <dd>
+            韓国でタッカルビが有名な所で来ました。
+            <br />使用者インターフェースと使用者経験に関心を持ち、勉強をしています。
+            <br />余暇時間にはFPSゲームを楽しんでいます。
+            趣味だと言っていますが、結構本気です。しかし実力はあまりよくありません.
+            <br />スマホ、タブレットPC、自作PCとか小さい電子機器に興味があります。
+          </dd>
+        </dl>
+      </article>
+      <h2 id="contacts" class="subtitle contacts">contacts</h2>
+      <article class="margin">
+        <div class="map-wrap">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.9334733151213!2d127.73149111560961!3d37.86184701491747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e42defc3b279%3A0x1ddd93905162f8e0!2z64yA7ZWc66-86rWtIOqwleybkOuPhCDstpjsspzsi5wg7Ye06rOE64-ZIOuCqOy2mOyynOyDiOq4uCAxMQ!5e0!3m2!1sko!2sjp!4v1625993895458!5m2!1sko!2sjp"
+          width="1005"
+          height="310"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+        <ul class="mailto mailtobox">
+          <li>
+            <i class="mailto fas fa-external-link-square-alt"></i> Namchuncheonsaegil
+            11, Chuncheon-si, Gangwon-do, Rep. of Korea
+          </li>
+          <li>
+            <i class="mailto fas fa-envelope-square"></i>
+            <a href="mailto:dummy@gmail.com">dummy@gmail.com</a>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      <address>
+        2021 &copy;
+        <a href="https://blog.kanyuki.kr"
+          ><img src="images/scnnlogo.png" alt=""
+        /></a>
+        by KIM INHO
+      </address>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script>
+      $(".slick").slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        addaptiveHeight: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+      });
+    </script>
+     <script>
+      var random = Math.floor(Math.random() * $(".randomitem").length);
+      $(".randomitem").hide().eq(random).show();
+    </script
+  </>
+</html>

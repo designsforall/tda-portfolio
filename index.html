@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>//PORTFOLIO</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&family=Sawarabi+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
+    <header>
+        <div id="title">
+          <h1><a href="index.html">//PORTFOLIO</a></h1>
+        </div>
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="index.html"><li>home</li></a>
+              <a href="works.html"><li>works</li></a>
+              <a href="about.html"><li>about</li></a>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <h2 id="main" class="hmargin"></h2>
+      <article class="margin">
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide "
+              style="background-image: url('images/works_random/work_1.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide"
+              style="background-image: url('images/works_random/work_2.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide"
+              style="background-image: url('images/works_random/work_3.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide"
+              style="background-image: url('images/works_random/work_4.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide"
+              style="background-image: url('images/works_random/work_5.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="randomitem">
+          <a href="works.html">
+            <div
+              class="thumbwide"
+              style="background-image: url('images/works_random/work_6.jpg')"
+            >
+              <span>works</span>
+            </div>
+          </a>
+        </div>
+        <div class="mainitem">
+          <a href="about.html"
+            ><div
+              class="thumbwide"
+              style="background-image: url('images/profilepicmain.jpeg')"
+            >
+              <span>about</span>
+            </div></a
+          >
+        </div>
+        <div class="maingrid">
+        <div class="mainitem ">
+          <a href="https://blog.kanyuki.kr/" target="_blank"
+            ><div
+              class="thumbmid"
+              style="background-image: url('images/blogmain.jpg')"
+            >
+              <span>blog</span>
+            </div></a
+          >
+        </div>
+        <div class="mainitem ">
+          <a href="https://github.com/" target="_blank"
+            ><div
+              class="thumbmid"
+              style="background-image: url('images/gitmain.jpeg')"
+            >
+              <span>git</span>
+            </div></a
+          >
+        </div>
+        <div class="mainitem ">
+          <a href="https://twitch.tv/" target="_blank"
+            ><div
+              class="thumbmid"
+              style="background-image: url('images/streammain.jpg')"
+            >
+              <span>streams</span>
+            </div></a
+          >
+        </div>
+      </div>
+      <div class="nyan">
+        <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank"
+          ><img src="images/nyan.gif" alt=""
+        /></a>
+      </div>
+      </article>
+    </main>
+    <footer>
+      <address>
+        2021 &copy;
+        <a href="https://blog.kanyuki.kr"
+          ><img src="images/scnnlogo.png" alt=""
+        /></a>
+        by KIM INHO
+      </address>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script>
+      var random = Math.floor(Math.random() * $(".randomitem").length);
+      $(".randomitem").hide().eq(random).show();
+    </script>
+</html>
