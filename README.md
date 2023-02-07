@@ -1,2 +1,2 @@
-# tdaportfolio
-portfolio site from schoolwork with responsive designs
+# Portfolio web with responsive designs
+portfolio site from school work with responsive designs (y2)
